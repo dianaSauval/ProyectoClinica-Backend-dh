@@ -1,6 +1,6 @@
 package com.proyecto.clinica.service;
 
-import com.proyecto.clinica.model.Turno;
+import com.proyecto.clinica.entities.Turno;
 import com.proyecto.clinica.repository.impl.TurnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

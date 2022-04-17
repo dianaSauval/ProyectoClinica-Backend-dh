@@ -1,17 +1,15 @@
 package com.proyecto.clinica.service;
 
-import com.proyecto.clinica.model.Domicilio;
+import com.proyecto.clinica.entities.Domicilio;
 import com.proyecto.clinica.repository.impl.DomicilioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class DomicilioService {
-
     private final DomicilioRepository domicilioRepository;
 
     @Autowired
@@ -34,9 +32,4 @@ public class DomicilioService {
     public List<Domicilio> listar() {
         return domicilioRepository.findAll();
     }
-
-    /*public Domicilio actualizar(Domicilio d) {
-        return domicilioRepository.actualizar(d);
-    }
-    }*/
 }
