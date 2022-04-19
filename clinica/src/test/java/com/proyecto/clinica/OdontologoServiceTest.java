@@ -1,6 +1,8 @@
 package com.proyecto.clinica;
 
 import com.proyecto.clinica.entities.Odontologo;
+import com.proyecto.clinica.entities.OdontologoDTO;
+import com.proyecto.clinica.exceptions.ResourceNotFoundException;
 import com.proyecto.clinica.service.OdontologoService;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -14,6 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Set;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(SpringRunner.class)
@@ -23,34 +26,33 @@ public class OdontologoServiceTest {
     @Autowired
     private OdontologoService odontologoService;
 
+    @Test
+    public void crearOdontologoTest() throws ResourceNotFoundException {
+        OdontologoDTO odontologoDTO = new OdontologoDTO();
+        odontologoDTO.setNombre("Javier");
+        odontologoDTO.setApellido("Velazquez");
+        odontologoDTO.setId(33L);
+        odontologoService.crearOdontologo(odontologoDTO);
 
-    public void cargarDataSet() {
-        this.odontologoService.guardar(new Odontologo("Santiago", "Paz", 3455647));
-
-
+        OdontologoDTO odontologoDTO1 = odontologoService.leerOdontologo(33L);
+        Assert.assertTrue(odontologoDTO1 != null);
     }
 
     @Test
-    public void guardarOdontologo() {
-        this.cargarDataSet();
-        Odontologo o = odontologoService.guardar(new Odontologo("Juan", "Ramirez", 348971960));
-        Assert.assertTrue(o.getId() != null);
-    }
-
-    @Test
-    public void eliminarOdontologoTest() {
-        odontologoService.eliminar(66L);
-        Assert.assertTrue(odontologoService.buscar(66L).isEmpty());
+    public void eliminarOdontologoTest() throws ResourceNotFoundException {
+        OdontologoDTO odontologoDTO1 = odontologoService.leerOdontologo(33L);
+        odontologoService.eliminarOdontologo(33L);
+        Assert.assertNull(odontologoDTO1);
 
     }
 
     @Test
     @Transactional
     public void traerTodos() {
-        List<Odontologo> odontologos = odontologoService.listar();
-        Assert.assertTrue(!odontologos.isEmpty());
-        Assert.assertNotNull(odontologoService.listar().size());
-        System.out.println(odontologos);
+        Set<OdontologoDTO> odontologoDTOS = odontologoService.listarTodos();
+        Assert.assertTrue(!odontologoDTOS.isEmpty());
+        Assert.assertNotNull(odontologoService.listarTodos().size());
+        System.out.println(odontologoDTOS);
     }
 
 

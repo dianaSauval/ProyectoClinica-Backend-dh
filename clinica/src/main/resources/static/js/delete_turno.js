@@ -11,4 +11,6 @@ function deleteBy(id)
           let row_id = "#tr_" + id;
           document.querySelector(row_id).remove();
 
+          document.querySelector(".col-sm-6").style.display="none";
+
 }

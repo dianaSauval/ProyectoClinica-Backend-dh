@@ -31,8 +31,8 @@ window.addEventListener('load', function () {
             turnoRow.innerHTML = '<td>' + updateButton + '</td>' +
                         '<td class=\"td_fecha\">' + turno.fecha + '</td>' +
                         '<td class=\"td_hora\">' + turno.hora + '</td>' +
-                        '<td class=\"td_paciente\">' + turno.paciente + '</td>' +
-                        '<td class=\"td_odontologo\">' + turno.odontologo + '</td>' +
+                        '<td class=\"td_paciente\">' + turno.paciente.nombre + " " + turno.paciente.apellido +'</td>' +
+                        '<td class=\"td_odontologo\">' + turno.odontologo.nombre + " " + turno.odontologo.apellido + '</td>' +
                         '<td>' + deleteButton + '</td>';
 
         };

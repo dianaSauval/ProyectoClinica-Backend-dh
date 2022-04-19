@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
             fetch(url, settings)
                 .then(response => response.json())
                 .then(data => {
-                console.log(data)
+
                     for (paciente of data) {
                         var selectElement = document.querySelector("#paciente");
                         selectElement.appendChild(new Option(paciente.nombre + " " + paciente.apellido, paciente));

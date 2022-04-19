@@ -1,5 +1,6 @@
 package com.proyecto.clinica.entities;
 
+import com.fasterxml.jackson.annotation.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -29,6 +30,7 @@ public class Odontologo {
 
     @Getter @Setter @Column(name = "turnos")
     @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
+    @JsonIgnore
     private Set<Turno> turnos = new HashSet<>();
 
     public Odontologo(String nombre, String apellido, Integer matricula) {
