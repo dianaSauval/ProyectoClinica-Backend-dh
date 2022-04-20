@@ -83,3 +83,5 @@
 [2022-04-20 12:24:57] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
 [2022-04-20 12:24:59] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
 [2022-04-20 12:24:59] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 13:00:30] [ERROR] [GlobalExceptionHandler:17] JSON parse error: Cannot construct instance of `com.proyecto.clinica.entities.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.proyecto.clinica.entities.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 49] (through reference chain: com.proyecto.clinica.entities.TurnoDTO["paciente"])
