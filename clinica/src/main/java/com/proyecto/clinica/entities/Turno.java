@@ -38,6 +38,13 @@ public class Turno {
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Odontologo odontologo;
 
+    public Turno() {
+    }
 
-
+    public Turno(Date fecha, LocalTime hora, Paciente paciente, Odontologo odontologo) {
+        this.fecha = fecha;
+        this.hora = hora;
+        this.paciente = paciente;
+        this.odontologo = odontologo;
+    }
 }
