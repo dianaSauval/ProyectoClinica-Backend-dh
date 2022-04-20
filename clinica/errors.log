@@ -66,3 +66,6 @@
 [2022-04-19 12:11:34] [ERROR] [GlobalExceptionHandler:17] Handler dispatch failed; nested exception is java.lang.StackOverflowError
 [2022-04-19 12:13:11] [ERROR] [GlobalExceptionHandler:17] Handler dispatch failed; nested exception is java.lang.StackOverflowError
 [2022-04-19 12:15:47] [ERROR] [GlobalExceptionHandler:17] No existe un odontologo con el id 5
+[2022-04-19 12:18:23] [ERROR] [GlobalExceptionHandler:17] No existe un paciente con el id 5
+[2022-04-19 12:18:28] [ERROR] [GlobalExceptionHandler:17] No existe un turno con el id 5
+[2022-04-19 12:18:34] [ERROR] [GlobalExceptionHandler:17] No existe un domicilio con el id 5
