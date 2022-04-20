@@ -1,2 +1,6 @@
-package com.proyecto.clinica.login;public class AppUsuarioRoles {
+package com.proyecto.clinica.login;
+
+
+public enum AppUsuarioRoles {
+    USER,ADMIN
 }

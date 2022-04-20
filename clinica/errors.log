@@ -69,3 +69,17 @@
 [2022-04-19 12:18:23] [ERROR] [GlobalExceptionHandler:17] No existe un paciente con el id 5
 [2022-04-19 12:18:28] [ERROR] [GlobalExceptionHandler:17] No existe un turno con el id 5
 [2022-04-19 12:18:34] [ERROR] [GlobalExceptionHandler:17] No existe un domicilio con el id 5
+[2022-04-20 10:28:26] [ERROR] [GlobalExceptionHandler:17] Request method 'GET' not supported
+[2022-04-20 10:28:30] [ERROR] [GlobalExceptionHandler:17] Request method 'GET' not supported
+[2022-04-20 10:59:21] [ERROR] [GlobalExceptionHandler:17] Request method 'GET' not supported
+[2022-04-20 11:06:10] [ERROR] [GlobalExceptionHandler:17] Request method 'GET' not supported
+[2022-04-20 11:08:04] [ERROR] [GlobalExceptionHandler:17] Request method 'GET' not supported
+[2022-04-20 12:11:25] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 12:11:49] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 12:12:02] [ERROR] [GlobalExceptionHandler:17] Content type 'text/html;charset=UTF-8' not supported
+[2022-04-20 12:12:07] [ERROR] [GlobalExceptionHandler:17] JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 3, column: 3]
+[2022-04-20 12:12:15] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 12:24:57] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 12:24:59] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
+[2022-04-20 12:24:59] [ERROR] [GlobalExceptionHandler:17] Content type 'text/plain;charset=UTF-8' not supported
