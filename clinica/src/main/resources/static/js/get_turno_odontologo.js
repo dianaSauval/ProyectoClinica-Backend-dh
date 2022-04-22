@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
                 .then(data => {
                     for (odontologo of data) {
                         var selectElement2 = document.querySelector("#odontologo");
-                        selectElement2.appendChild(new Option(odontologo.nombre + " " + odontologo.apellido, odontologo));
+                        selectElement2.appendChild(new Option(odontologo.nombre + " " + odontologo.apellido, odontologo.id));
                     }
                 })
 

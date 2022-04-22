@@ -11,8 +11,12 @@ window.addEventListener('load', function () {
          const formData = {
                   fecha: document.querySelector('#fecha').value,
                   hora: document.querySelector('#hora').value,
-                  paciente: document.querySelector("#paciente").value,
-                  odontologo: document.querySelector("#odontologo").value,
+                  paciente: {
+                        id: document.querySelector('#paciente').value
+                              },
+                  odontologo: {
+                        id: document.querySelector('#odontologo').value
+                              }
               };
               console.log(formData)
 

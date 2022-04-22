@@ -36,7 +36,6 @@ window.addEventListener('load', function() {
                  let successAlert = '<div class="alert alert-success alert-dismissible">' +
                  '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                  '<strong></strong> Paciente agregado </div>'
-                 console.log(document.querySelector('#fechaIngreso').value);
 
                  document.querySelector('#response').innerHTML = successAlert;
                  document.querySelector('#response').style.display = "block";

@@ -27,10 +27,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/turnos/**")
                 .hasAuthority("USER")
-                .antMatchers("/odontologos/**", "/pacientes/**")
+                .antMatchers( "/odontologos/**", "/pacientes/**")
                 .hasAuthority("ADMIN")
-                .antMatchers("/index.html",
-                        "/turnoAlta.html",
+                .antMatchers("/turnoAlta.html",
                         "/turnoList.html")
                 .hasAuthority("USER")
                 .antMatchers("/odontologoAlta.html", "/index.html",
@@ -43,7 +42,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .permitAll()
-                .and();
+                .and()
+                .exceptionHandling().accessDeniedPage("/acceso_denegado.html");
+
 
     }
 

@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
 
                     for (paciente of data) {
                         var selectElement = document.querySelector("#paciente");
-                        selectElement.appendChild(new Option(paciente.nombre + " " + paciente.apellido, paciente));
+                        selectElement.appendChild(new Option(paciente.nombre + " " + paciente.apellido, paciente.id));
                     }
                 })
         })
