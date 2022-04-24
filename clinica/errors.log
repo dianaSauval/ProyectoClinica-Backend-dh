@@ -148,3 +148,7 @@ delete from odontologos where id=? [23503-200]]; nested exception is org.hiberna
 [2022-04-23 22:11:34] [ERROR] [GlobalExceptionHandler:17] No existe un odontologo con el id 3
 [2022-04-23 22:19:57] [ERROR] [GlobalExceptionHandler:17] Request method 'PUT' not supported
 [2022-04-23 22:33:18] [ERROR] [GlobalExceptionHandler:17] Required request body is missing: public org.springframework.http.ResponseEntity<?> com.proyecto.clinica.controller.PacienteController.crearPaciente(com.proyecto.clinica.entities.PacienteDTO)
+[2022-04-23 22:38:34] [ERROR] [GlobalExceptionHandler:17] JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 5]); nested exception is com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 5])
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 25, column: 6]
+[2022-04-23 22:47:19] [ERROR] [GlobalExceptionHandler:17] No existe un turno con el id 1
+[2022-04-23 22:48:03] [ERROR] [GlobalExceptionHandler:17] No existe un odontologo con el id 25

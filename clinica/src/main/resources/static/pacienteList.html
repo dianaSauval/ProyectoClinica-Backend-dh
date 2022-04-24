@@ -11,31 +11,6 @@
     <script type="text/javascript" src="/js/get_paciente.js"></script>
     <script type="text/javascript" src="/js/update_paciente.js"></script>
     <script type="text/javascript" src="/js/delete_paciente.js"></script>
-    <script>
-    window.addEventListener('load', function () {
-        let fechasDeIngreso = document.querySelectorAll(".td_fechaIngreso");
-              for (let i = 0; i < fechasDeIngreso.length; i++) {
-              formatDate(fechasDeIngreso[i]);
-
-          }
-
-        })
-
-                                function formatDate(NewDtime) {
-                                var dt = new Date(parseInt(NewDtime.slice(6, 19)));
-                                var year = dt.getFullYear();
-                                var month = dt.getMonth() + 1;
-                                var date = dt.getDate();
-                                var hour = dt.getHours();
-                                var minute = dt.getMinutes();
-                                var second = dt.getSeconds();
-                                return year + "/" + month + "/" + date;
-                            }
-
-
-
-
-    </script>
 </head>
 <body>
 <nav class=" mb-2 navbar navbar-expand-lg navbar-dark" style="background-color:#1783B0;">

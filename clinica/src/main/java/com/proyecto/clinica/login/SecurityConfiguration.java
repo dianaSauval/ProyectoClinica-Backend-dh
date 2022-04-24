@@ -32,7 +32,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/turnoAlta.html",
                         "/turnoList.html")
                 .hasAuthority("USER")
-                .antMatchers("/odontologoAlta.html", "/index.html",
+                .antMatchers("/odontologoAlta.html",
                         "/pacienteAlta.html",
                         "/usuarioAdd.html",
                         "/odontologoList.html",

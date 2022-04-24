@@ -1,16 +1,12 @@
 window.addEventListener('load', function () {
 
 
-    //Buscamos y obtenemos el formulario donde estan
-    //los datos que el usuario pudo haber modificado del odontolohgo
+
     const formulario = document.querySelector('#update_odontologo_form');
 
     formulario.addEventListener('submit', function (event) {
         let peliculaId = document.querySelector('#odontologo_id').value;
 
-        //creamos un JSON que tendrá los datos del odontologo
-        //a diferencia de un odontologo nuevo en este caso enviamos el id
-        //para poder identificarlo y modificarlo para no cargarlo como nuevo
         const formData = {
             id: document.querySelector('#odontologo_id').value,
             nombre: document.querySelector('#nombre').value,
@@ -19,8 +15,7 @@ window.addEventListener('load', function () {
 
         };
 
-        //invocamos utilizando la función fetch la API odontologos con el método PUT que modificará
-        //al odontologo que enviaremos en formato JSON
+
         const url = 'api/odontologos';
         const settings = {
             method: 'PUT',
@@ -35,9 +30,7 @@ window.addEventListener('load', function () {
     })
  })
 
-    //Es la funcion que se invoca cuando se hace click sobre el id de un odontologo del listado
-    //se encarga de llenar el formulario con los datos del odontologo
-    //que se desea modificar
+
     function findBy(id) {
           const url = 'api/odontologos'+"/"+id;
           const settings = {
