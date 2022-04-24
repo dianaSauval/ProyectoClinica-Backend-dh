@@ -1,0 +1,578 @@
+{
+	"info": {
+		"_postman_id": "2459ea35-bbab-4646-8675-e4b3cb40dc0f",
+		"name": "Clinica Odontologica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "odontologos",
+			"item": [
+				{
+					"name": "get-odontologos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-odontologo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put-odontologo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1,\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 227\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-un-odontologo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-un-odontologo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFallido-un-odontologo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/odontologos/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"odontologos",
+								"25"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pacientes",
+			"item": [
+				{
+					"name": "get-pacientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pacientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 1,\r\n        \"nombre\": \"Lucia\",\r\n        \"apellido\": \"Novelino\",\r\n        \"email\": \"lucia@hotmail.com\",\r\n        \"dni\": 35458215,\r\n        \"fechaIngreso\": \"2022-04-05T00:00:00.000+00:00\",\r\n        \"domicilio\": {\r\n            \"id\": 1,\r\n            \"calle\": \"Elcano\",\r\n            \"numero\": \"3678\",\r\n            \"localidad\": \"Barracas\",\r\n            \"provincia\": \"CABA\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pacientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put-paciente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 1,\r\n        \"nombre\": \"Lucia\",\r\n        \"apellido\": \"Novelino\",\r\n        \"email\": \"lucia@hotmail.com\",\r\n        \"dni\": 35458215,\r\n        \"fechaIngreso\": \"2022-04-05T00:00:00.000+00:00\",\r\n        \"domicilio\": {\r\n            \"id\": 1,\r\n            \"calle\": \"Chile\",\r\n            \"numero\": \"1572\",\r\n            \"localidad\": \"Monserrat\",\r\n            \"provincia\": \"CABA\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pacientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-un-paciente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pacientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pacientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-paciente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pacientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pacientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "turnos",
+			"item": [
+				{
+					"name": "get-turnos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/turnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"turnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-turno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    \r\n    {\r\n        \"fecha\": \"2022-04-30T00:00:00.000+00:00\",\r\n        \"hora\": \"15:15:00\",\r\n        \"paciente\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Lucia\",\r\n            \"apellido\": \"Novelino\",\r\n            \"email\": \"lucia@hotmail.com\",\r\n            \"dni\": 35458215,\r\n            \"fechaIngreso\": \"2022-04-05T00:00:00.000+00:00\",\r\n            \"domicilio\": {\r\n                \"id\": 1,\r\n                \"calle\": \"Elcano\",\r\n                \"numero\": \"3678\",\r\n                \"localidad\": \"Barracas\",\r\n                \"provincia\": \"CABA\"\r\n            }\r\n        },\r\n        \"odontologo\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Gonzalo\",\r\n            \"apellido\": \"Siandra\",\r\n            \"matricula\": 225\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/turnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"turnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put-turno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    \r\n    {\r\n        \"id\": 1,\r\n        \"fecha\": \"2022-06-30T00:00:00.000+00:00\",\r\n        \"hora\": \"18:30:00\",\r\n        \"paciente\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Lucia\",\r\n            \"apellido\": \"Novelino\",\r\n            \"email\": \"lucia@hotmail.com\",\r\n            \"dni\": 35458215,\r\n            \"fechaIngreso\": \"2022-04-05T00:00:00.000+00:00\",\r\n            \"domicilio\": {\r\n                \"id\": 1,\r\n                \"calle\": \"Elcano\",\r\n                \"numero\": \"3678\",\r\n                \"localidad\": \"Barracas\",\r\n                \"provincia\": \"CABA\"\r\n            }\r\n        },\r\n        \"odontologo\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Gonzalo\",\r\n            \"apellido\": \"Siandra\",\r\n            \"matricula\": 225\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/turnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"turnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-un-turnos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/turnos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"turnos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-turnos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"nombre\": \"Gonzalo\",\r\n        \"apellido\": \"Siandra\",\r\n        \"matricula\": 225\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/turnos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"turnos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login-admin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "charly@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "JuanPablo@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

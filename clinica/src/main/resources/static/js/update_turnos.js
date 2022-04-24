@@ -14,11 +14,12 @@ window.addEventListener('load', function () {
                          fecha: document.querySelector('#fecha').value,
                          hora: document.querySelector('#hora').value,
                          paciente: {
-                            id: document.querySelector('#paciente').value
-                              },
+                         id: document.querySelector('#paciente').value
+                         },
                          odontologo: {
-                            id: document.querySelector('#odontologo').value
-                              }
+                         id: document.querySelector('#odontologo').value
+                         }
+
 
         };
 
@@ -54,8 +55,8 @@ window.addEventListener('load', function () {
               document.querySelector('#turno_id').value = turno.id;
               document.querySelector('#fecha').value = turno.fecha;
               document.querySelector('#hora').value = turno.hora;
-              document.querySelector('#paciente > option').value = turno.paciente.id;
-              document.querySelector('#odontologo > option').value = turno.odontologo.id;
+              document.querySelector('#paciente').value = turno.paciente.id;
+              document.querySelector('#odontologo').value = turno.odontologo.id;
 
               //el formulario por default esta oculto y al editar se habilita
               document.querySelector('#div_turno_updating').style.display = "block";
